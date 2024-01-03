@@ -1,4 +1,4 @@
-# MP01: Simple Enciphering
+# Simple Enciphering
 
 ## Change Log
 
