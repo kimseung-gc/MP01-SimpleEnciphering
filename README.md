@@ -29,8 +29,36 @@ javac -d bin/ *.java
 ```
 
 ## How to Run
+
+### Caesar Cipher
 ```
-java -cp bin BlockChainDriver <initial amount>
+java -cp bin CaesarCipher <option> <word/phrase>
+
+<option> ∈ {"encode", "decode"}
+"encode" : encodes the <word/phrase> into all 26 possible outcomes of encrypting 
+with Caesar Cipher method
+"decode" : decodes the <word/phrase> into all 26 possible outcomes of decrypting
+with Caesar Cipher method
+
+<word/phrase> can be any valid string input desired to be encoded or decoded (they shall 
+not contain any special characters other than the alphabets).
+```
+
+### Vigenère Cipher
+```
+java -cp bin VigenereCipher <option> <word/phrase> <key>
+
+<option> ∈ {"encode", "decode"}
+"encode" : encodes the <word/phrase> into an encrypted message using Vigenère Cipher method
+using the given <key>
+"decode" : decodes the <word/phrase> into a decrypted message using Vigenère Cipher method 
+using the given <key>
+
+<word/phrase> can be any valid string input desired to be encoded or decoded (they shall 
+not contain any special characters other than the alphabets).
+
+<key> can be any valid string input desired to be encode or decode the given <word/phrase> 
+(they shall not contain any special characters other than the alphabets).
 ```
 
 ## Acknowledgements

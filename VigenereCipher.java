@@ -126,7 +126,7 @@ public class VigenereCipher {
     }else if(args[0].equals("decode")){
       pen.println(decipher(args[1], args[2]));
     }else{
-      pen.println("The only valid options are \"encipher\" and \"decipher\""); // throws an error when invalid argument was given
+      pen.println("The only valid options are \"encode\" and \"decode\""); // throws an error when invalid argument was given
     } // if/else
   } // main (String[])
 } // Class VigenereCipher
